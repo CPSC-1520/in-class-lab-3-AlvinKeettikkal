@@ -34,7 +34,7 @@ resourcesDiv.addEventListener('mouseover', (event) => {
     if (event.target.tagName.toLowerCase() === 'a') {
       return; 
     }
-    const listItem = event.target.closest('.list-group-item');
+    let listItem = event.target.closest('.list-group-item');
     if (listItem) {
       listItem.classList.add('fst-italic');
     }
