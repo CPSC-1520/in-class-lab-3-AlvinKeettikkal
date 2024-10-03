@@ -18,3 +18,12 @@ resourcesDiv.addEventListener('mouseover', (event) => {
       listItem.classList.add('fw-bold');
     }
   });
+
+  // Step 3
+
+  resourcesDiv.addEventListener('mouseout', (event) => {
+    let listItem = event.target.closest('.list-group-item');
+    if (listItem) {
+      listItem.classList.remove('fw-bold');
+    }
+  });
